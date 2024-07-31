@@ -1,0 +1,27 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot-vue
+    username: root
+    password: 123456
+
+  elasticsearch:
+    uris: 127.0.0.1:9200
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com.example.springbootvue.mapper: debug
+
+
